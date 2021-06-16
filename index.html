@@ -5,6 +5,24 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 	<meta http-equiv="X-UA-Compatible" content="chrome=1, IE=edge">
 	<link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+
+	<script>
+		document.addEventListener('DOMContentLoaded', function () {
+			var gifs = [
+				"https://media.giphy.com/media/3oz8xIiQkjAhhtorGU/giphy.gif",
+				"https://media.giphy.com/media/iJxHzcuNcCJXi/giphy.gif",
+				"https://media.giphy.com/media/3o7TKwmnDgQb5jemjK/giphy.gif",
+				"https://media.giphy.com/media/26hiu5j6ggfMRmWbe/giphy.gif",
+				"https://media.giphy.com/media/f5uxHH8eXwbm4WKe84/giphy.gif",
+				"https://media.giphy.com/media/eKrgVyZ7zLvJrgZNZn/giphy.gif",
+				"https://media.giphy.com/media/26tOXgoz0WNQhwb04/giphy.gif",
+				"https://media.giphy.com/media/l3vRamQEmsTa4wpR6/giphy.gif",
+				"https://media.giphy.com/media/d2Z4NRCUxsxZBvag/giphy.gif"
+			];
+		  var image = document.getElementById("gif");
+			image.src = gifs[Math.floor(Math.random() * gifs.length)];
+		}, false);
+	</script>
 </head>
 <body class="bg-blue-900  text-yellow-300">
 
@@ -13,11 +31,11 @@
 	<!-- <h2 class="text-2xl">Nej!</h2> -->
 	<!-- Thumbs up <img src="https://media.giphy.com/media/iJxHzcuNcCJXi/giphy.gif" /> -->
 	<!-- Shrug <img src="https://media.giphy.com/media/3oz8xIiQkjAhhtorGU/giphy.gif" /> -->
-	
+
 	<!-- Thumbs down -->
-	<img src="https://media.giphy.com/media/iJxHzcuNcCJXi/giphy.gif" />
-	
+	<img id="gif" src="https://media.giphy.com/media/iJxHzcuNcCJXi/giphy.gif" />
+
 </div>
-	
+
 </body>
 </html>
